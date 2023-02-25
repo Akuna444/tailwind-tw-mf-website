@@ -630,6 +630,10 @@ html {
   position: absolute;
 }
 
+.relative{
+  position: relative;
+}
+
 .sticky{
   position: -webkit-sticky;
   position: sticky;
@@ -747,23 +751,14 @@ html {
   border-style: none;
 }
 
-.bg-pink-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(236 72 153 / var(--tw-bg-opacity));
-}
-
-.bg-white{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-white\/5{
-  background-color: rgb(255 255 255 / 0.05);
-}
-
 .bg-zinc-200{
   --tw-bg-opacity: 1;
   background-color: rgb(228 228 231 / var(--tw-bg-opacity));
+}
+
+.bg-pink-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 72 153 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r{
@@ -815,11 +810,6 @@ html {
   color: rgb(12 74 110 / var(--tw-text-opacity));
 }
 
-.text-zinc-500{
-  --tw-text-opacity: 1;
-  color: rgb(113 113 122 / var(--tw-text-opacity));
-}
-
 .text-pink-200{
   --tw-text-opacity: 1;
   color: rgb(251 207 232 / var(--tw-text-opacity));
@@ -828,6 +818,10 @@ html {
 .underline{
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+}
+
+.opacity-100{
+  opacity: 1;
 }
 
 .ring{
@@ -848,6 +842,12 @@ html {
   transition-duration: 150ms;
 }
 
+.transition-all{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .ease-in-out{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -863,6 +863,28 @@ html {
 
 .group:hover .group-hover\:block{
   display: block;
+}
+
+.group.open .group-open\:top-2{
+  top: 0.5rem;
+}
+
+.group.open .group-open\:-top-2{
+  top: -0.5rem;
+}
+
+.group.open .group-open\:rotate-45{
+  --tw-rotate: 45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group.open .group-open\:-rotate-45{
+  --tw-rotate: -45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group.open .group-open\:opacity-0{
+  opacity: 0;
 }
 
 @media (min-width: 768px){
