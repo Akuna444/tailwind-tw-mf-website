@@ -416,6 +416,36 @@ html {
   font-family: "Quicksand", sans-serif;
 }
 
+h1{
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+h2{
+  font-size: 3rem;
+  line-height: 1;
+}
+
+h3{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+h4{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+h5{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+h6{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -664,6 +694,11 @@ html {
   margin-bottom: auto;
 }
 
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .ml-auto{
   margin-left: auto;
 }
@@ -682,6 +717,10 @@ html {
 
 .mt-3{
   margin-top: 0.75rem;
+}
+
+.mt-20{
+  margin-top: 5rem;
 }
 
 .block{
@@ -746,6 +785,10 @@ html {
 
 .w-1{
   width: 0.25rem;
+}
+
+.max-w-screen-lg{
+  max-width: 1024px;
 }
 
 .flex-1{
