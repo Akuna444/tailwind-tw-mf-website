@@ -643,6 +643,14 @@ html {
   top: 0px;
 }
 
+.top-\[62px\]{
+  top: 62px;
+}
+
+.left-0{
+  left: 0px;
+}
+
 .top-full{
   top: 100%;
 }
@@ -686,6 +694,10 @@ html {
 
 .w-8{
   width: 2rem;
+}
+
+.w-full{
+  width: 100%;
 }
 
 .flex-1{
@@ -834,16 +846,16 @@ html {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.transition-colors{
-  transition-property: color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;
+.transition-all{
+  transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
 
-.transition-all{
-  transition-property: all;
+.transition-colors{
+  transition-property: color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -885,6 +897,10 @@ html {
 
 .group.open .group-open\:opacity-0{
   opacity: 0;
+}
+
+.peer.open ~ .peer-open\:block{
+  display: block;
 }
 
 @media (min-width: 768px){
