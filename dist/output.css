@@ -692,6 +692,10 @@ html {
   height: 0.25rem;
 }
 
+.h-full{
+  height: 100%;
+}
+
 .w-8{
   width: 2rem;
 }
@@ -736,6 +740,10 @@ html {
 
 .justify-end{
   justify-content: flex-end;
+}
+
+.justify-center{
+  justify-content: center;
 }
 
 .gap-2{
@@ -797,6 +805,10 @@ html {
 
 .pr-4{
   padding-right: 1rem;
+}
+
+.text-center{
+  text-align: center;
 }
 
 .text-2xl{
@@ -864,6 +876,10 @@ html {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.hover\:bg-white\/10:hover{
+  background-color: rgb(255 255 255 / 0.1);
+}
+
 .hover\:bg-white\/5:hover{
   background-color: rgb(255 255 255 / 0.05);
 }
@@ -883,6 +899,10 @@ html {
 
 .group.open .group-open\:-top-2{
   top: -0.5rem;
+}
+
+.group.open .group-open\:block{
+  display: block;
 }
 
 .group.open .group-open\:rotate-45{
