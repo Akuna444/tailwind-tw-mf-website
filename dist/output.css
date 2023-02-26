@@ -703,6 +703,10 @@ h6{
   top: 100%;
 }
 
+.z-10{
+  z-index: 10;
+}
+
 .my-auto{
   margin-top: auto;
   margin-bottom: auto;
